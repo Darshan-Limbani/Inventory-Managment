@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.inventorymanagment">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InventoryManagment">
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.InventoryManagment">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main"
+            android:exported="false">
+
+        </activity>
+
+        <activity
+            android:name=".product.AddProduct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vendor.AddVendor"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".product.detail.PurchaseDetail"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".product.detail.SalesDetail"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HowTo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".product.ProductList"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".model.SaleProduct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vendor.VendorList"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="org.achartengine.GraphicalActivity"
+            android:parentActivityName=".Main" />
+
+        <provider
+            android:name="com.example.inventorymanagment.data.ItemizeProvider"
+            android:authorities="com.example.inventorymanagment"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
