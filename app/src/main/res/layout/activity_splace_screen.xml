@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreen"
-    android:background="@color/accent_material_dark"
+    android:background="@drawable/bg_nav"
     android:layout_gravity="center">
 
 
